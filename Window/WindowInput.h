@@ -1,0 +1,80 @@
+#pragma once
+
+namespace ytr{
+
+	enum inputKeys{
+		// standard letters
+		INPUT_KEY_A,
+		INPUT_KEY_B,
+		INPUT_KEY_C,
+		INPUT_KEY_D,
+		INPUT_KEY_E,
+		INPUT_KEY_F,
+		INPUT_KEY_G,
+		INPUT_KEY_H,
+		INPUT_KEY_I,
+		INPUT_KEY_J,
+		INPUT_KEY_K,
+		INPUT_KEY_L,
+		INPUT_KEY_M,
+		INPUT_KEY_N,
+		INPUT_KEY_O,
+		INPUT_KEY_P,
+		INPUT_KEY_Q,
+		INPUT_KEY_R,
+		INPUT_KEY_S,
+		INPUT_KEY_T,
+		INPUT_KEY_U,
+		INPUT_KEY_V,
+		INPUT_KEY_W,
+		INPUT_KEY_X,
+		INPUT_KEY_Y,
+		INPUT_KEY_Z,
+		// number keys
+		INPUT_KEY_1,
+		INPUT_KEY_2,
+		INPUT_KEY_3,
+		INPUT_KEY_4,
+		INPUT_KEY_5,
+		INPUT_KEY_6,
+		INPUT_KEY_7,
+		INPUT_KEY_8,
+		INPUT_KEY_9,
+		INPUT_KEY_0,
+		// other keys
+		INPUT_KEY_ESCAPE,
+		INPUT_KEY_TAB,
+		INPUT_KEY_CAPSLOCK,
+		INPUT_KEY_LSHIFT,
+		INPUT_KEY_RSHIFT,
+		INPUT_KEY_LCONTROL,
+		INPUT_KEY_RCONTROL,
+		INPUT_KEY_LALT,
+		INPUT_KEY_RALT,
+		INPUT_KEY_SPACE,
+		// mouse buttons
+		INPUT_KEY_MOUSE_LEFT,
+		INPUT_KEY_MOUSE_RIGHT,
+		INPUT_KEY_MOUSE_MIDDLE,
+
+		INPUT_KEYS_COUNT     // has to be the last element to know the size
+	};
+
+	enum inputKeyRepeat{
+		INPUT_KEY_PRESS,
+		INPUT_KEY_REPEAT,
+		INPUT_KEY_RELEASE
+	};
+
+	enum inputButtons{
+
+	};
+
+	enum inputAnalogAxis{
+		INPUT_MOUSE_X,
+		INPUT_MOUSE_Y,
+
+
+		INPUT_ANALOG_COUNT
+	};
+}
