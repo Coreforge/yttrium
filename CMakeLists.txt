@@ -28,7 +28,15 @@ include(${CMAKE_CURRENT_LIST_DIR}/MFLoader/CMakeLists.txt)
 
 target_include_directories(yttrium PUBLIC .)
 
-target_link_libraries(yttrium glfw GL GLEW)
+find_package(GLEW REQUIRED)
+find_package(glfw3 REQUIRED)
+if (GLEW_FOUND)
+    #target_link_libraries(infiniteExplorer ${GLEW_LIBRARIES})
+    message("glew libraries: ${GLEW_LIBRARIES}")
+    target_link_libraries(yttrium glfw)
+else()
+    target_link_libraries(yttrium GL GLEW)
+endif()
 
 #set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
 
